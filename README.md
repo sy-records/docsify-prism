@@ -152,7 +152,7 @@ The build produces:
 - `dist/index.js` — readable browser script.
 - `dist/index.min.js` — minified browser script.
 
-Run `npm run build` after changing the source to update the files used by the demo and browser tests.
+`npm run dev` automatically builds the plugin before starting the demo server. If you change the source while the server is running, run `npm run build` and refresh the page, or restart `npm run dev`.
 
 ### Local demo
 
@@ -173,16 +173,18 @@ Open [http://127.0.0.1:4174](http://127.0.0.1:4174). The demo covers individual 
 
 ### Tests
 
-Run unit tests with `npm test`. To run the browser tests, install Chromium once:
+Run unit tests with `npm test`. Browser tests use the files in `dist/` and do not build automatically. Install Chromium once, then build the plugin before running browser tests:
 
 ```sh
 npx playwright install chromium
+npm run build
 npm run test:e2e
 ```
 
 When using a docsify checkout instead of a local installation:
 
 ```sh
+npm run build
 DOCSIFY_ROOT=/absolute/path/to/docsify npm run test:e2e
 ```
 
