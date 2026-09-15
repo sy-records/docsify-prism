@@ -9,6 +9,14 @@
     "line-numbers",
     "diff"
   ],
+  "homepage": "https://github.com/sy-records/docsify-prism#readme",
+  "bugs": {
+    "url": "https://github.com/sy-records/docsify-prism/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sy-records/docsify-prism.git"
+  },
   "license": "MIT",
   "author": "sy-records",
   "main": "dist/index.js",
