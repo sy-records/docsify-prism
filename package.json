@@ -1,0 +1,42 @@
+{
+  "name": "@sy-records/docsify-prism",
+  "version": "1.0.0",
+  "description": "A docsify plugin that integrates Prism plugins for enhanced code blocks.",
+  "keywords": [
+    "docsify",
+    "docsify-plugin",
+    "prism",
+    "line-numbers",
+    "diff"
+  ],
+  "license": "MIT",
+  "author": "sy-records",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node --test test/*.test.js",
+    "test:e2e": "playwright test",
+    "dev": "node build/serve.js",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "jsdom": "^26.1.0",
+    "prismjs": "^1.30.0",
+    "terser": "^5.43.1"
+  },
+  "peerDependencies": {
+    "docsify": ">=5"
+  },
+  "peerDependenciesMeta": {
+    "docsify": {
+      "optional": true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>docsify-prism</title>
+    <link rel="stylesheet" href="/docsify/themes/core.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/prismjs/plugins/diff-highlight/prism-diff-highlight.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: "docsify-prism",
+        loadSidebar: true,
+        subMaxLevel: 2,
+        auto2top: true,
+        basePath: "/docs/",
+        prism: true,
+      };
+    </script>
+    <script src="/docsify/docsify.js"></script>
+    <script src="/dist/index.js"></script>
+    <script src="/node_modules/prismjs/components/prism-diff.js"></script>
+    <script src="/node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+    <script src="/node_modules/prismjs/plugins/line-highlight/prism-line-highlight.js"></script>
+    <script src="/node_modules/prismjs/plugins/diff-highlight/prism-diff-highlight.js"></script>
+  </body>
+</html>
