@@ -8,7 +8,7 @@ Add `:class="line-numbers"` to a code fence. Blank lines are numbered too.
 
 **Markdown**
 
-````markdown
+````markup
 ```js :class="line-numbers"
 const count = 2;
 
@@ -32,7 +32,7 @@ Use `:data-line` to highlight individual lines or inclusive ranges. Line numbers
 
 **Markdown**
 
-````markdown
+````markup
 ```js :class="no-line-numbers" :data-line="1,3-4"
 const count = 2;
 
@@ -58,7 +58,7 @@ Use `diff-` followed by the language name, plus `:class="diff-highlight"`. Prefi
 
 **Markdown**
 
-````markdown
+````markup
 ```diff-javascript :class="diff-highlight"
 -const count = 1;
 +const count = 2;
@@ -84,7 +84,7 @@ List multiple classes in `:class` and add `:data-line` to combine line numbers, 
 
 **Markdown**
 
-````markdown
+````markup
 ```diff-js :class="line-numbers diff-highlight" :data-line="3"
 -const count = 1;
 +const count = 2;
@@ -113,7 +113,7 @@ An empty code block remains empty, even when line numbers or line highlighting a
 
 **Markdown**
 
-````markdown
+````markup
 ```js :class="line-numbers" :data-line="1"
 
 ```
