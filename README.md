@@ -1,5 +1,10 @@
 # docsify-prism
 
+[![](https://data.jsdelivr.com/v1/package/npm/@sy-records/docsify-prism/badge)](https://www.jsdelivr.com/package/npm/@sy-records/docsify-prism)
+[![](https://img.shields.io/npm/v/@sy-records/docsify-prism.svg?style=flat-square)](https://www.npmjs.com/package/@sy-records/docsify-prism)
+[![](https://img.shields.io/npm/l/@sy-records/docsify-prism)](https://github.com/sy-records/docsify-prism/blob/main/LICENSE)
+[![](https://github.com/sy-records/docsify-prism/actions/workflows/test.yml/badge.svg)](https://github.com/sy-records/docsify-prism/actions/workflows/test.yml)
+
 A docsify plugin that integrates Prism plugins for enhanced code blocks.
 
 ## Supported Prism plugins
